@@ -1,0 +1,13 @@
+# mini project for printing the series by taking input from user such as starting point , ending point updation,horizontal,vertical and also taking choice for ptint the series either in reverse order and forward order
+s=int(input("enter starting point"))
+e=int(input("enter endingg point"))
+u=int(input("enter updation"))
+choice=input("enter h for horizontal and v for vertical")
+if (choice=="v"):
+    for i in range(s,e+1,u):
+         print(i)
+elif(choice=="h"):         
+  for i in range(e,s-1,-u):
+       print(i,end=" ")
+else:
+   print("invalid input")
